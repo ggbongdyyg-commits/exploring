@@ -1,0 +1,5 @@
+dist/
+.netlify/
+screenshots/
+.DS_Store
+node_modules/

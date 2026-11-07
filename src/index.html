@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#eceae5">
+<meta name="robots" content="noindex">
+<title>88keys countdown</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23eceae5'/%3E%3Crect x='6' y='5' width='6' height='22' fill='%231c1d1d'/%3E%3Crect x='14' y='5' width='6' height='22' fill='%231c1d1d'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="stage">
+  <div id="hatch"></div>
+  <svg id="arc" aria-hidden="true"></svg>
+  <div id="nums" aria-hidden="true"></div>
+  <div id="label"><b></b><span></span></div>
+  <svg id="body" aria-hidden="true"></svg>
+  <header id="brand">88keys <i>countdown</i></header>
+  <div id="kb"><div id="track"></div></div>
+  <svg id="walker" viewBox="0 0 24 56" aria-hidden="true">
+    <circle cx="12" cy="7" r="6"/>
+    <rect x="5" y="15" width="14" height="23" rx="7"/>
+    <rect x="6.5" y="34" width="4.6" height="22" rx="2.3"/>
+    <rect x="12.9" y="34" width="4.6" height="22" rx="2.3"/>
+  </svg>
+  <div id="grab" aria-hidden="true"></div>
+  <button id="chip" type="button" hidden aria-label="修改此刻的心情"></button>
+  <div id="trail" hidden></div>
+  <button id="peek" type="button" aria-label="回看心情">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 10v1.6M15.5 10v1.6M8.4 14.4Q12 17.8 15.6 14.4"/></svg>
+  </button>
+  <section id="pick" hidden></section>
+  <section id="review" hidden></section>
+  <p id="sr" class="sr" role="status" aria-live="polite"></p>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
